@@ -49,21 +49,25 @@ manga-reader/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd manga-reader
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Environment Setup**
+
    - Copy `.env.example` to `.env` (if available)
    - Update environment variables as needed
 
 4. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -94,17 +98,20 @@ manga-reader/
 ## Features in Detail
 
 ### Home Page
+
 - Featured manga carousel
 - Recently updated chapters
 - Quick search functionality
 
 ### Browse Page
+
 - Advanced filtering by genre, status, and more
 - Search functionality
 - Pagination support
 - Responsive grid layout
 
 ### Chapter Reader
+
 - Full-screen reading mode
 - Keyboard navigation (arrow keys)
 - Zoom controls
