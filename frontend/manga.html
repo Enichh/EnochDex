@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Manga - EnochDex</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/manga.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>EnochDex</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="manga.html" class="nav-link active">Browse Manga</a></li>
+                <li><a href="#" class="nav-link">Bookmarks</a></li>
+                <li><a href="#" class="nav-link">History</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="manga-browser">
+            <div class="browser-header">
+                <h2>Browse Manga</h2>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search manga..." class="search-input">
+                    <button id="searchBtn" class="search-btn">Search</button>
+                </div>
+                <div class="filter-container">
+                    <select id="genreFilter" class="filter-select">
+                        <option value="">All Genres</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                    </select>
+                    <select id="statusFilter" class="filter-select">
+                        <option value="">All Status</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
+                        <option value="hiatus">Hiatus</option>
+                    </select>
+                    <select id="sortBy" class="filter-select">
+                        <option value="title">Title</option>
+                        <option value="rating">Rating</option>
+                        <option value="views">Views</option>
+                        <option value="updated">Last Updated</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="manga-grid" id="mangaGrid">
+                <!-- Manga items will be loaded here -->
+                <div class="loading">Loading manga...</div>
+            </div>
+
+            <div class="pagination">
+                <button id="prevPage" class="page-btn" disabled>Previous</button>
+                <span id="pageInfo" class="page-info">Page 1 of 1</span>
+                <button id="nextPage" class="page-btn" disabled>Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Manga Reader. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/manga.js"></script>
+</body>
+</html>

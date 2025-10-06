@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 - Sample Manga - EnochDex</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chapter.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>EnochDex</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="manga.html" class="nav-link">Browse Manga</a></li>
+                <li><a href="#" class="nav-link">Bookmarks</a></li>
+                <li><a href="#" class="nav-link">History</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="chapter-reader">
+            <div class="chapter-header">
+                <div class="chapter-info">
+                    <h1 id="mangaTitle">Sample Manga</h1>
+                    <h2 id="chapterTitle">Chapter 1: The Beginning</h2>
+                    <div class="chapter-navigation">
+                        <button id="prevChapter" class="nav-btn">Previous Chapter</button>
+                        <select id="chapterSelect" class="chapter-select">
+                            <option value="1">Chapter 1</option>
+                            <option value="2">Chapter 2</option>
+                        </select>
+                        <button id="nextChapter" class="nav-btn">Next Chapter</button>
+                    </div>
+                </div>
+                <div class="reader-controls">
+                    <button id="fitWidth" class="control-btn active">Fit Width</button>
+                    <button id="fitHeight" class="control-btn">Fit Height</button>
+                    <button id="zoomIn" class="control-btn">Zoom In</button>
+                    <button id="zoomOut" class="control-btn">Zoom Out</button>
+                    <button id="fullscreen" class="control-btn">Fullscreen</button>
+                </div>
+            </div>
+
+            <div class="chapter-content">
+                <div class="page-container" id="pageContainer">
+                    <!-- Pages will be loaded here -->
+                    <div class="loading">Loading chapter pages...</div>
+                </div>
+            </div>
+
+            <div class="chapter-footer">
+                <div class="chapter-navigation-bottom">
+                    <button id="prevChapterBottom" class="nav-btn">Previous Chapter</button>
+                    <span id="pageInfo" class="page-info">Page 1 of 25</span>
+                    <button id="nextChapterBottom" class="nav-btn">Next Chapter</button>
+                </div>
+                <div class="chapter-actions">
+                    <button id="bookmarkChapter" class="action-btn">Bookmark</button>
+                    <button id="addToLibrary" class="action-btn">Add to Library</button>
+                    <button id="reportIssue" class="action-btn">Report Issue</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Manga Reader. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chapter.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnochDex - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h1>EnochDex</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="manga.html" class="nav-link">Browse Manga</a></li>
+          <li><a href="#" class="nav-link">Bookmarks</a></li>
+          <li><a href="#" class="nav-link">History</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Welcome to EnochDex</h2>
+          <p>Discover and read your favorite manga series</p>
+          <button
+            class="cta-button"
+            onclick="window.location.href='manga.html'"
+          >
+            Browse Manga
+          </button>
+        </div>
+      </section>
+
+      <section class="featured-manga">
+        <h3>Featured Manga</h3>
+        <div class="manga-grid" id="featuredManga">
+          <!-- Featured manga will be loaded here -->
+          <div class="loading">Loading featured manga...</div>
+        </div>
+      </section>
+
+      <section class="manga-catalog">
+        <h3>Manga Catalog</h3>
+        <div class="manga-list-container" id="mangaList">
+          <!-- Manga list will be loaded here -->
+          <div class="loading">Loading manga catalog...</div>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination">
+          <button id="prevPage" class="page-btn">Previous</button>
+          <span id="pageInfo" class="page-info">Page 1 of 1</span>
+          <button id="nextPage" class="page-btn">Next</button>
+        </div>
+      </section>
+
+      <section class="recent-chapters">
+        <h3>Recent Chapters</h3>
+        <div class="chapter-list" id="recentChapters">
+          <!-- Recent chapters will be loaded here -->
+          <div class="loading">Loading recent chapters...</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Manga Reader. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
